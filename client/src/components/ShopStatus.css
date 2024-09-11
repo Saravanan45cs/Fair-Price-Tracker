@@ -1,0 +1,179 @@
+body {
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.shop-status-container {
+  padding: 20px;
+  text-align: center;
+  max-height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.current-time {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-report {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.download-report:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.notify-all-btn, .call-all-btn {
+  background-color: #0056b3;
+  color: white;
+}
+
+.notify-all-btn:hover, .call-all-btn:hover {
+  background-color: #1c5f99;
+  transform: scale(1.05);
+}
+
+.notify-btn {
+  background-color: #0a971d;
+  color: white;
+}
+
+.notify-btn:hover {
+  background-color: #0a861a;
+  transform: scale(1.05);
+}
+
+.call-btn {
+  background-color: #0056b3;
+  color: white;
+}
+
+.call-btn:hover {
+  background-color: #004494;
+  transform: scale(1.05);
+}
+
+.notification-sent-text, .call-initiated-text {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.status-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.status-open {
+  background-color: green;
+}
+
+.status-closed {
+  background-color: red;
+}
+
+.shop-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.shop-table th,
+.shop-table td {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+  height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.shop-table th {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-status-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .shop-table {
+    font-size: 0.8rem;
+  }
+
+  .shop-table th,
+  .shop-table td {
+    padding: 10px 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .shop-table {
+    font-size: 0.7rem;
+  }
+
+  .shop-table th,
+  .shop-table td {
+    padding: 8px 6px;
+  }
+}
